@@ -99,9 +99,15 @@ Purchase:
 					<img src="images/mr duro.jpg" alt="item1" class="img-responsive">
 				</div>
 				<div class="ed_team_member_description">
+<<<<<<< HEAD
 					<h4><a href="instructor_dashboard.php">Citp Adekunle Ezekiel Durosinmi MNCS, MSP</a></h4>
 					<h5>Consultant</h5>
 					<p>Consultant on Education, Information and communicationn security</p>
+=======
+					<h4><a href="instructor_dashboard.php">Adekunle Ezekiel Durosinmi</a></h4>
+					<h5>director</h5>
+					<p>Project-Based Learning is a flexible tool for framing.</p>
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 				</div>
 			</div>
 		</div>
@@ -111,10 +117,16 @@ Purchase:
 					<img src="http://placehold.it/255X255" alt="item2" class="img-responsive">
 				</div>
 				<div class="ed_team_member_description">
+<<<<<<< HEAD
 					<h4><a href="instructor_dashboard.php">Yakubu Abiola</a></h4>
 					<h5>C.E.O</h5>
 					<p>A full-stack developer</p>
 					<p>Founder and innovator of the highschool.tech</p>
+=======
+					<h4><a href="instructor_dashboard.php">Frank Pascole</a></h4>
+					<h5>principle</h5>
+					<p>The European languages are members of the same fam.</p>
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 				</div>
 			</div>
 		</div>
@@ -124,10 +136,16 @@ Purchase:
 					<img src="http://placehold.it/255X255" alt="item3" class="img-responsive">
 				</div>
 				<div class="ed_team_member_description">
+<<<<<<< HEAD
 					<h4><a href="instructor_dashboard.php">Okedokun paul</a></h4>
 					<h5>Graphics designer</h5>
 					<p> A dot NET developer</p>
 					<p> The scope behind all graphics of highschool.tech</p>
+=======
+					<h4><a href="instructor_dashboard.php">Tina Bonucci</a></h4>
+					<h5>t.p.o.</h5>
+					<p> The languages only differ in grammar, common words.</p>
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 				</div>
 			</div>
 		</div>
@@ -137,9 +155,15 @@ Purchase:
 					<img src="http://placehold.it/255X255" alt="item4" class="img-responsive">
 				</div>
 				<div class="ed_team_member_description">
+<<<<<<< HEAD
 					<h4><a href="instructor_dashboard.php">Olopade oluwasegun</a></h4>
 					<h5>Front end developer</h5>
 					<p>A Front end developer who support the project</p>
+=======
+					<h4><a href="instructor_dashboard.php">Shy Tommus</a></h4>
+					<h5>h.o.d.</h5>
+					<p>If several languages coalesce, the grammar of the resulting language.</p>
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 				</div>
 			</div>
 		</div>		

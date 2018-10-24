@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 	<!-- login code >
 
 						  <?php
@@ -65,6 +66,70 @@
               ?>
 
               <!-- end of login -->
+=======
+<!-- login code -->
+
+							<?php
+							include('include/db.php');
+							if (isset($_POST['login'])) {
+								 $email = $_POST['email'];
+								 $pass = $_POST['pass'];
+								 $role = $_POST['role'];
+								switch ($role) {
+   				 case "Teacher":
+       			$sel = "SELECT * FROM teacher WHERE email = '$email' and password = '$pass' and type = '$role' ";
+       			$res = $conn->query($sel);
+       			if ($res->num_rows > 0 ) {
+       				$_SESSION['email']= $email;
+       				?>
+       				<meta http-equiv="refresh"  content="0;url='dashboard.php'">
+       				<?php
+       			}else{
+       						 echo "<script>
+        					alert('No Record Found');
+       						 </script>";
+        					
+  						  }
+        			break;
+    			case "Student":
+    			$sel = "SELECT * FROM student WHERE email = '$email' and password = '$pass' and type = '$role' ";
+       			$res = $conn->query($sel);
+       			if ($res->num_rows > 0 ) {
+       				$_SESSION['email']= $email;
+       				?>
+       				<meta http-equiv="refresh"  content="0;url='student/dashboard.php'">
+       				<?php
+       			}else{
+       						 echo "<script>
+        					alert('No Record Found');
+       						 </script>";
+        					echo $conn->error;
+  						  }
+       			 break;
+   				 case "Parent":
+   	           				$sel = "SELECT * FROM parent WHERE email = '$email' and password = '$pass' and type = '$role' ";
+       			$res = $conn->query($sel);
+       			if ($res->num_rows > 0 ) {
+       				$_SESSION['email']= $email;
+       				?>
+       				<meta http-equiv="refresh"  content="0;url='dashboard.php'">
+       				<?php
+       			}else{
+       						 echo "<script>
+        					alert('No Record Found');
+       						 </script>";
+        					
+  						  }
+       				 break;
+						}
+
+														}
+
+							?>
+
+							<!-- end of login -->
+
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 <header id="ed_header_wrapper">
 	<div class="ed_header_top">
 		<div class="container">
@@ -75,7 +140,11 @@
 						<a href="#" id="login_button">Login</a>
 							<div id="login_one" class="ed_login_form">
 								<h3>log in</h3>
+<<<<<<< HEAD
 								<form class="form" method="POST" action="login.php">
+=======
+								<form class="form" method="POST" >
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 									<div class="form-group">
 										<label class="control-label">Email :</label>
 										<input type="email" name="email" class="form-control" >

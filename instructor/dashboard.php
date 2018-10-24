@@ -2,11 +2,16 @@
 include('../include/db.php');
 error_reporting(E_ALL);
 $email = $_SESSION['email'];
+<<<<<<< HEAD
 $join = "SELECT * FROM teacher WHERE email = '$email'";
+=======
+$join = "SELECT * FROM student WHERE email = '$email'";
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 $res = $conn->query($join);
 if ($res->num_rows > 0) {
 while ($result = $res-> fetch_assoc()) {
            $name = $result['name'];
+<<<<<<< HEAD
               $sch = $result['school'];
               $id = $result['id']; 
             }
@@ -32,6 +37,11 @@ if (isset($_POST['submit'])) {
         </script>";
     }
 }
+=======
+               $sch = $result['school']; 
+            }
+}
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 
 ?>
 
@@ -47,14 +57,21 @@ Purchase:
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
+<<<<<<< HEAD
 <html lang="en" class="no-js">
+=======
+<html lang="en">
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 <!--<![endif]-->
 
 <!-- Begin Head -->
 <head>
+<<<<<<< HEAD
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		
+=======
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 <meta charset="utf-8" />
 <title>Highschool</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -65,6 +82,7 @@ Purchase:
 
 <!--srart theme style -->
 <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+<<<<<<< HEAD
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
 <link rel="stylesheet" type="text/css" href="../css/component.css" />
@@ -81,6 +99,11 @@ Purchase:
   .file-field.big-2 .file-path-wrapper .file-path {
     height: 3.5rem; }</style>
     <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+=======
+<!-- end theme style -->
+<!-- favicon links -->
+<link rel="shortcut icon" type="image/png" href="../images/header/favicon.png" />
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 </head>
 <body>
 <!--Page main section start-->
@@ -98,7 +121,11 @@ Purchase:
 	<div class="container">
 		<div class="row">
 			<?php // include('dashlink.php'); ?>
+<<<<<<< HEAD
 			<div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
+=======
+			<div class="col-lg-9 col-md-9 col-sm-9 col-xs-10">
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 			<div class="ed_dashboard_tab">
 				<div class="tab-content">
 					<div class="tab-pane " id="dashboard">
@@ -110,6 +137,7 @@ Purchase:
 					</div>
 
 					<!-- tested -->
+<<<<<<< HEAD
 					<div class="tab-pane active" id="courses">
 	<div class="ed_dashboard_inner_tab">
 		<div role="tabpanel">
@@ -219,6 +247,14 @@ Purchase:
 							</div><!--tab End-->
 						</div>
 					</div>
+=======
+					<!-- end tested-->
+					<?php include('stucourse.php'); ?>
+					<?php // include('stuactivity.php'); ?>
+					<?php // include('stupronot.php'); ?>
+					<?php // include('stusettings.php'); ?>
+					
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 				</div>
 			</div>
 			</div>
@@ -251,7 +287,11 @@ Purchase:
 
 <!--main js file end-->
 </body>
+<<<<<<< HEAD
 </html>
 <?php
 
 ?>
+=======
+</html>
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f

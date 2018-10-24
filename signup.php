@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php  
 include('include/db.php');error_reporting(E_ALL);
 $sql = "SELECT * FROM schools ORDER BY id asc ";
@@ -91,6 +92,8 @@ if ($select->num_rows > 0 ) {
 }
 }
 ?>
+=======
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 <!DOCTYPE html>
 <!-- 
 Template Name: Educo
@@ -108,7 +111,11 @@ Purchase:
 <!-- Begin Head -->
 <head>
 <meta charset="utf-8" />
+<<<<<<< HEAD
 <title>highschool</title>
+=======
+<title>Educo Responsive HTML Template</title>
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <meta name="description"  content="Educo"/>
 <meta name="keywords" content="Educo, html template, Education template" />
@@ -174,7 +181,84 @@ Purchase:
 	</div>
 </div>
 <!-- signup code -->
+<<<<<<< HEAD
 
+=======
+<?php  
+include('include/db.php');
+$sql = "SELECT * FROM schools ORDER BY id asc ";
+			$query = $conn->query($sql);
+			while ($lit = $query-> fetch_assoc()) {
+			 $id = $lit['id'];
+			$id = $id + 202 ;
+			$id2 = "SCH_".$id;
+			$_session['id_2'] = $id2;
+			}
+/*$sqlit = "SELECT * FROM teacher ORDER BY id asc ";
+			$que = $conn->query($sqlit);
+			while ($lit = $que-> fetch_assoc()) {
+			echo $id = $lit['id'];
+			$id = $id + 202 ;
+			$ref = "REF_".$id."T";
+			$_session['refcode'] = $ref;
+			}*/
+
+$schname = "";
+if (isset($_POST['signup'])) {
+	$name = $_POST['fullname'];
+	$email =$_POST['email'];
+	$pass = $_POST['password'];
+	$role= $_POST['role'];
+	$schname = $_POST['schname'];
+	$id2 = $_session['id_2'];
+	$ref = $_session['refcode'];
+	if ($schname == "") {
+}else{
+	$sel = " SELECT * FROM schools where name = $schname";
+$select = $conn->query($sel);
+if ($select->num_rows > 0 ) {
+}else{
+	$inse = "INSERT INTO schools (id_2,name) VALUES ('$id2','$schname') ";
+	$rel = $conn->query($inse);
+	echo $conn->error;
+}
+}
+	switch ($role) {
+    case "Teacher":
+        $ins  = "INSERT INTO teacher (name,email,password,sch_code,school,type) VALUES('$name','$email','$pass','$id2','$schname','$role')" ;
+        $res = $conn-> query($ins);
+         if($res === TRUE)
+    {
+        echo "<script>
+        alert('registration successful');
+        </script>";
+    }
+        break;
+    case "Student":
+         $ins  = "INSERT INTO student (name,email,password,school,sch_code,type) VALUES('$name','$email','$pass','$schname','$id2','$role')" ;
+        $res = $conn-> query($ins);
+         if($res === TRUE)
+    {
+        echo "<script>
+        alert('registration successful');
+        </script>";
+    }
+        break;
+    case "Parent":
+           $ins  = "INSERT INTO parent (name,email,password,school,type) VALUES('$name','$email','$pass','$schname','$role')" ;
+        $res = $conn-> query($ins);
+         if($res === TRUE)
+    {
+        echo "<script>
+        alert('registration successful');
+        </script>";
+    }
+        break;
+}
+}
+
+?>
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 <!-- end of signup code -->
 
 <!--Footer Bottom section start-->

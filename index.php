@@ -47,7 +47,11 @@ Purchase: http://themeforest.net/user/kamleshyadav
 						<li data-transition="slotslide-horizontal">
 							
 							<!-- MAIN IMAGE -->
+<<<<<<< HEAD
 							<img src="images/pix.png"  alt="">
+=======
+							<img src="images/big3.png"  alt="">
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 							<div class="ed_course_single_image_overlay"></div>
 
 							<!-- LAYER NR. 1 -->
@@ -121,7 +125,11 @@ Purchase: http://themeforest.net/user/kamleshyadav
 						<li data-transition="slotslide-vertical">
 							
 							<!-- MAIN IMAGE -->
+<<<<<<< HEAD
 							<img src="images/pic.png"  alt="">
+=======
+							<img src="images/big.png"  alt="">
+>>>>>>> 42db2460d906b0a76aaea5085437c570e951f23f
 							<div class="ed_course_single_image_overlay"></div>
 
 							<!-- LAYER NR. 1 -->
